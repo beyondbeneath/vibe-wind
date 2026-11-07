@@ -1,0 +1,23 @@
+{
+  "name": "surface-conditions",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "coastline": "node scripts/build-coastline.mjs",
+    "coastline:fetch": "node scripts/build-coastline.mjs --fetch"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.22",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6",
+    "vitest": "^4.1.12"
+  }
+}
